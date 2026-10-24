@@ -66,6 +66,40 @@ For each later change, update the project in the wizard, review, export, and pus
 Git integration triggers another build. Verify the deployment result and keep
 your source ZIP or repository as the editable copy.
 
+## Maintainers: deploy this project's fictional gallery
+
+The public [template gallery](https://academic-homepage-builder.pages.dev/) is a
+static demonstration of all three layouts. It does not host the local wizard or
+accept résumé uploads. This maintainer recipe uses the builder repository itself;
+the personal-homepage recipe above uses an exported source project.
+
+Build the gallery locally from the builder repository:
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/build_demo.py
+python -m http.server 8000 --directory demo-dist --bind 127.0.0.1
+```
+
+For its Cloudflare Pages Git integration, use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | None |
+| Root directory | Repository root |
+| Build command | `pip install -r requirements.txt && python scripts/build_demo.py` |
+| Build output directory | `demo-dist` |
+| Python version | `3.12` |
+
+The script reads only the bundled fictional demo, keeps the visible demo notice,
+and adds `noindex` directives. Personal sites should continue using `python build.py`
+and `dist` as described above. The gallery's `noindex` setting is intentional and
+is not a recommendation for real researchers' published homepages.
+
+维护者演示站使用本仓库的 `scripts/build_demo.py`，输出目录为 `demo-dist`；
+使用者自己的学术主页使用导出源码包中的 `build.py`，输出目录为 `dist`。
+在线演示不提供简历上传功能，也不部署本地向导服务。
+
 ## Custom domains and search
 
 You may add your own domain from the Pages project's custom-domain settings.

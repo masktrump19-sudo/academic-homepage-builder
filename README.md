@@ -9,6 +9,9 @@ and export a static website or an editable source project.
 [中文说明](README.zh-CN.md) · [Deployment](docs/deployment.md) ·
 [Privacy](docs/privacy.md) · [Codex assistance](docs/codex.md) · [Validation](docs/validation.md)
 
+[Explore the template gallery](https://academic-homepage-builder.pages.dev/).
+The online gallery shows static, fictional examples. Import your résumé in the local builder.
+
 ![The local wizard's three layout choices and appearance controls](docs/screenshots/wizard.jpg)
 
 | Academic | Modern | Visual |

@@ -8,6 +8,9 @@
 [English](README.md) · [部署教程](docs/deployment.md) ·
 [隐私说明](docs/privacy.md) · [Codex 辅助](docs/codex.md) · [验证记录](docs/validation.md)
 
+[查看在线模板演示](https://academic-homepage-builder.pages.dev/)。
+在线演示仅展示虚构人物的静态主页；简历导入在本地向导进行。
+
 ![本地向导的三种模板与外观设置](docs/screenshots/wizard.jpg)
 
 ## 功能

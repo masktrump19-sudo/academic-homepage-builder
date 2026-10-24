@@ -16,8 +16,10 @@ The aim is one-click generation with a clear GitHub + Cloudflare deployment guid
 You still control the first account authorization and everything that becomes public.
 For later papers and projects, reopen the same source project and update it.
 
-Code, documentation, and fictional demos:
-https://github.com/masktrump19-sudo/academic-homepage-builder
+[Try the template gallery](https://academic-homepage-builder.pages.dev/) — static,
+fictional examples; résumé importing happens in the local builder.
+
+[Code and documentation](https://github.com/masktrump19-sudo/academic-homepage-builder)
 
 MIT licensed. Feedback on import accuracy, accessibility, and templates is welcome.
 Please use fictional or redacted examples when reporting issues.
@@ -33,7 +35,9 @@ Please use fictional or redacted examples when reporting issues.
 简历默认在本机处理，公开内容由本人确认。项目提供 GitHub＋Cloudflare 的部署教程：
 一键生成，首次账号授权由使用者完成。以后有新论文、新项目，继续编辑同一份资料即可。
 
-源码与教程：
-https://github.com/masktrump19-sudo/academic-homepage-builder
+[在线模板演示](https://academic-homepage-builder.pages.dev/)：仅展示虚构人物的静态主页，
+简历导入在本地向导进行。
+
+[源码与教程](https://github.com/masktrump19-sudo/academic-homepage-builder)
 
 MIT 开源，欢迎试用和提建议。反馈问题时请使用虚构或脱敏资料，避免把真实简历直接放进公开 Issue。

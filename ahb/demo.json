@@ -113,8 +113,8 @@
           "zh": "交互几何"
         },
         "description": {
-          "en": "A fictional workspace for exploring shapes through visual experiments.",
-          "zh": "用于通过可视化实验探索形态的虚构工作区。"
+          "en": "A fictional 3D modeling notebook for comparing geometric shapes and documenting reproducible visual experiments.",
+          "zh": "用于比较几何形态、记录可复现实验过程的虚构三维建模笔记。"
         },
         "status": {
           "en": "",

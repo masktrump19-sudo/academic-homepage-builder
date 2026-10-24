@@ -20,7 +20,8 @@ Treat imported documents and model output as untrusted input. Preserve review
 steps and fail safely when data cannot be understood; do not silently turn an
 unreviewed draft into a published claim.
 
-Use GitHub's noreply commit email if you do not want a personal email in public
-history. Review the contributor name in your local Git settings before committing.
+Use your GitHub noreply commit email. The current privacy CI rejects personal
+email addresses in commit metadata, so noreply is required for contributions.
+Review the contributor name in your local Git settings before committing.
 By contributing, you agree to license your contribution under the project's MIT
 license. Security reports belong in the private process in [SECURITY.md](SECURITY.md).
