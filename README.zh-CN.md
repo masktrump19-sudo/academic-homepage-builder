@@ -13,6 +13,23 @@
 
 ![本地向导的三种模板与外观设置](docs/screenshots/wizard.jpg)
 
+## 中文主页展示
+
+以下用虚构人物**“小明”**演示三套布局，以麻省理工学院（MIT）为学校名称示例；教育经历、项目与成果均为虚构，不代表实际关联。
+
+### 学术双栏
+
+![虚构人物小明的中文学术双栏主页](docs/screenshots/xiaoming-academic-zh.jpg)
+
+| 现代简洁 | 视觉作品 |
+| --- | --- |
+| ![虚构人物小明的中文现代简洁主页](docs/screenshots/xiaoming-modern-zh.jpg) | ![虚构人物小明的中文视觉作品主页](docs/screenshots/xiaoming-visual-zh.jpg) |
+
+查看中文模板：[学术双栏](https://academic-homepage-builder.pages.dev/academic/zh/) ·
+[现代简洁](https://academic-homepage-builder.pages.dev/modern/zh/) ·
+[视觉作品](https://academic-homepage-builder.pages.dev/visual/zh/)。
+在线页面仅供查看静态示例，编辑与简历导入在本机进行。
+
 ## 功能
 
 - 本机导入文字型 PDF、DOCX、TXT，也可以粘贴简历文字。

@@ -2,6 +2,7 @@ from io import BytesIO
 import json
 from pathlib import Path
 import zipfile
+from urllib.parse import urlsplit
 
 import pytest
 from pydantic import ValidationError
@@ -37,6 +38,34 @@ def test_blank_and_bilingual_demo_validate_without_personal_defaults():
     assert demo.example and set(demo.languages) == {'en', 'zh'}
     assert demo.site_url == ''
     assert demo.profile.email.endswith('@example.org')
+
+
+def test_demo_copies_share_fictional_xiaoming_identity_and_reserved_links():
+    root = Path(__file__).parents[1]
+    bundled = (root / 'ahb/demo.json').read_bytes()
+    assert bundled == (root / 'examples/demo.json').read_bytes()
+    demo = Site.model_validate_json(bundled)
+    assert demo.example
+    assert demo.profile.name == {'en': 'Xiaoming', 'zh': '小明'}
+    assert demo.profile.email == 'xiaoming@example.org'
+    school = {'en': 'Massachusetts Institute of Technology (MIT)', 'zh': '麻省理工学院（MIT）'}
+    assert demo.profile.affiliation == school
+    assert all(education.subtitle == school for education in demo.sections['education'])
+    assert 'MIT is used only as an example school name' in demo.profile.bio['en']
+    assert '仅以 MIT 作为学校名称示例' in demo.profile.bio['zh']
+    assert 'fictional' in demo.profile.bio['en']
+    assert '虚构' in demo.profile.bio['zh']
+    links = [link.url for link in demo.profile.links]
+    for entries in demo.sections.values():
+        for entry in entries:
+            if entry.url:
+                links.append(entry.url)
+            links.extend(link.url for link in entry.links)
+    assert all(urlsplit(link).hostname == 'example.org' for link in links)
+    for publication in demo.sections['publications']:
+        assert publication.status['en'] == 'Demo manuscript · Not submitted or published'
+        assert publication.status['zh'] == '演示稿件 · 未投稿、未发表'
+        assert publication.authors == 'Xiaoming, Lin Zhou'
 
 
 @pytest.mark.parametrize('url', ['javascript:alert(1)', 'data:text/html,hello', '//example.org', 'http://example.org', 'https://user:password@example.org', 'https://example.org\\@attacker.example', 'https://example.org/\nX-Test:yes', 'https://example.org:99999'])

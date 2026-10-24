@@ -53,8 +53,8 @@ def gallery_files() -> dict[str, bytes]:
             output[f'{key}/{name}'] = content
         cards.append(f'''<article class="template-card" id="{key}">
           <a class="thumbnail {key}" href="{key}/index.html" aria-label="Explore {title}">
-            <div class="paper" aria-hidden="true"><div class="mock-nav"><b>A.</b><i></i><i></i><i></i></div>
-              <div class="mock-body"><div class="mock-person"><span class="portrait">AM</span><b>Alex Morgan</b><i></i><i></i></div>
+            <div class="paper" aria-hidden="true"><div class="mock-nav"><b>X.</b><i></i><i></i><i></i></div>
+              <div class="mock-body"><div class="mock-person"><span class="portrait">XM</span><b>Xiaoming</b><i></i><i></i></div>
               <div class="mock-content"><b>About</b><i></i><i></i><i class="short"></i><b>Selected work</b>
                 <div class="mock-grid"><div><em></em><i></i><i class="short"></i></div><div><em></em><i></i><i class="short"></i></div></div>
               </div></div></div><span class="open-label">Explore template ↗</span></a>
@@ -67,15 +67,15 @@ def gallery_files() -> dict[str, bytes]:
 <title>Academic Homepage Builder · Template gallery</title>{NOINDEX}
 <meta name="description" content="Explore three academic homepage layouts using a fictional researcher profile.">
 <link rel="icon" href="academic/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="gallery.css"></head>
-<body><header class="topbar"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">A</span>Academic Homepage Builder</a><span class="edition">Template gallery · v1</span></header>
-<main><section class="intro"><p class="eyebrow">YOUR RESEARCH, YOUR SPACE</p><h1>A thoughtful home<br>for your academic work.</h1>
-<p class="lede">Three layouts. One shared profile. Explore the same fictional researcher’s homepage in English and Chinese.</p>
-<p class="intro-zh" lang="zh-CN">三种布局，同一份资料。为你的研究、项目与故事，找到合适的呈现方式。</p>
+<body><header class="topbar"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">A</span>Academic Homepage Builder</a><span class="edition">Template gallery · 模板预览</span></header>
+<main><section class="intro"><p class="eyebrow">ACADEMIC HOMEPAGE BUILDER</p><h1>Three layouts for<br>your academic homepage.</h1>
+<p class="lede">Explore Xiaoming’s fictional academic profile in three layouts, with English and Chinese pages.</p>
+<p class="intro-zh" lang="zh-CN">以小明的虚构资料为例，查看学术双栏、现代简洁与视觉作品三套模板。</p>
 <div class="details"><span>Local fonts &amp; assets</span><span>Responsive layouts</span><span>Light &amp; dark themes</span></div>
 <a class="get-builder" href="https://github.com/masktrump19-sudo/academic-homepage-builder" target="_blank" rel="noopener noreferrer">Get the local builder <span aria-hidden="true">↗</span></a></section>
 <section class="gallery" aria-label="Choose a template">{''.join(cards)}</section>
 <aside class="demo-note"><span class="note-dot" aria-hidden="true"></span><div><strong>Fictional content, real templates.</strong><p>All names, institutions and achievements shown here are illustrative. No user resumes or personal attachments are used in this gallery.</p><p lang="zh-CN">所有人物、机构与成果均为虚构演示，不包含使用者的简历或个人附件。</p></div></aside>
-</main><footer><span>Academic Homepage Builder</span><span>Designed to keep the work yours.</span></footer></body></html>'''.encode()
+</main><footer><span>Academic Homepage Builder</span><span>Local builder · MIT</span></footer></body></html>'''.encode()
     return output
 
 

@@ -3,6 +3,9 @@
 Publish only after the tagged release and deployment walkthrough are verified.
 These are copy drafts; the project does not post them automatically.
 
+For a shorter Chinese post with the fictional Xiaoming screenshots, use the
+[小红书发布文案](xiaohongshu.md).
+
 ## English
 
 I built Academic Homepage Builder, an open-source local wizard for academic websites.

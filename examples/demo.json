@@ -13,32 +13,32 @@
   "example": true,
   "profile": {
     "name": {
-      "en": "Alex Morgan",
-      "zh": "林知远"
+      "en": "Xiaoming",
+      "zh": "小明"
     },
     "headline": {
-      "en": "Research student · Fictional demo",
-      "zh": "研究生 · 虚构演示"
+      "en": "Master's student",
+      "zh": "硕士研究生"
     },
     "affiliation": {
-      "en": "Example University",
-      "zh": "示例大学"
+      "en": "Massachusetts Institute of Technology (MIT)",
+      "zh": "麻省理工学院（MIT）"
     },
     "bio": {
-      "en": "This fictional profile demonstrates an academic homepage. I explore how spatial computing and human-centered AI can make digital tools more useful and understandable. All people, institutions, projects, and achievements on this page are illustrative.",
-      "zh": "这是一份用于展示学术主页的虚构资料。我探索空间计算与以人为中心的人工智能，关注数字工具的实用性与可理解性。本页人物、机构、项目和成果均为演示内容。"
+      "en": "Hi, I'm Xiaoming, a master's student at Massachusetts Institute of Technology (MIT). I study data visualization and human–computer interaction, and build tools for exploring datasets and connecting research notes. Previously, I studied Computer Science and Technology at MIT. Xiaoming, the educational history, projects, and achievements are fictional; MIT is used only as an example school name.",
+      "zh": "你好，我是小明，目前在麻省理工学院（MIT）攻读硕士，研究方向为数据可视化与人机交互。我喜欢用简洁的工具探索数据、梳理研究笔记，本科也在 MIT 学习计算机科学与技术。小明及其就读经历、项目与成果均为虚构，仅以 MIT 作为学校名称示例。"
     },
     "interests": {
-      "en": "Spatial computing · Human-centered AI · Open research",
-      "zh": "空间计算 · 以人为中心的人工智能 · 开放研究"
+      "en": "Data Visualization · Human–Computer Interaction · Research Tools",
+      "zh": "数据可视化 · 人机交互 · 研究工具"
     },
-    "email": "alex@example.org",
+    "email": "xiaoming@example.org",
     "portrait": "",
     "cv": "",
     "links": [
       {
-        "label": "Project notebook",
-        "url": "https://example.org/research"
+        "label": "Research notebook",
+        "url": "https://example.org/xiaoming"
       }
     ]
   },
@@ -46,24 +46,24 @@
     "news": [
       {
         "title": {
-          "en": "A new research notebook",
-          "zh": "新的研究笔记"
+          "en": "A first Note Garden prototype",
+          "zh": "文献花园的第一个原型"
         },
         "subtitle": {
           "en": "",
           "zh": ""
         },
         "description": {
-          "en": "An illustrative update about documenting a project in public.",
-          "zh": "一条关于公开记录项目过程的示例动态。"
+          "en": "Connected reading notes with topic tags and an interactive graph in the first Note Garden prototype.",
+          "zh": "完成文献花园的第一个原型，用主题标签和交互式关系图连接阅读笔记。"
         },
         "status": {
-          "en": "",
-          "zh": ""
+          "en": "Prototype update",
+          "zh": "原型进展"
         },
         "date": "2026.09",
         "authors": "",
-        "url": "https://example.org/updates",
+        "url": "https://example.org/note-garden",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -73,29 +73,29 @@
     "publications": [
       {
         "title": {
-          "en": "Making Spatial Interfaces Easier to Understand",
-          "zh": "让空间界面更易理解"
+          "en": "Linking Reading Notes with Interactive Topic Maps for Literature Review",
+          "zh": "面向文献梳理的交互式主题地图与阅读笔记关联"
         },
         "subtitle": {
-          "en": "Fictional manuscript",
-          "zh": "虚构稿件"
+          "en": "Research prototype",
+          "zh": "研究原型"
         },
         "description": {
-          "en": "An illustrative paper entry. Replace the title, author list, venue, status, and links with your own verified information.",
-          "zh": "示例论文条目。请用经过核实的信息替换标题、作者、发表场所、状态和链接。"
+          "en": "A research prototype combining keyword tags, cross-paper links, and an interactive topic map to help students revisit questions across their reading notes.",
+          "zh": "结合关键词标签、跨论文关联和交互式主题地图，帮助学生在阅读笔记之间回顾问题、整理研究线索。"
         },
         "status": {
-          "en": "Demonstration only — not a real publication",
-          "zh": "仅供演示 — 非真实论文"
+          "en": "Demo manuscript · Not submitted or published",
+          "zh": "演示稿件 · 未投稿、未发表"
         },
         "date": "2026",
-        "authors": "Alex Morgan, Taylor Chen",
+        "authors": "Xiaoming, Lin Zhou",
         "url": "",
         "image": "",
         "links": [
           {
             "label": "Project",
-            "url": "https://example.org/paper"
+            "url": "https://example.org/topic-maps"
           }
         ],
         "confirmed": true,
@@ -105,16 +105,16 @@
     "projects": [
       {
         "title": {
-          "en": "Shape Notebook",
-          "zh": "形态笔记"
+          "en": "Note Garden",
+          "zh": "文献花园"
         },
         "subtitle": {
-          "en": "Interactive geometry",
-          "zh": "交互几何"
+          "en": "Research notes",
+          "zh": "文献笔记"
         },
         "description": {
-          "en": "A fictional 3D modeling notebook for comparing geometric shapes and documenting reproducible visual experiments.",
-          "zh": "用于比较几何形态、记录可复现实验过程的虚构三维建模笔记。"
+          "en": "Organizes paper summaries and research questions in a local notebook, with full-text search, topic tags, and a graph of cross-paper connections.",
+          "zh": "将论文摘要和研究问题整理为本地笔记，提供全文检索、主题标签和跨论文关联图。"
         },
         "status": {
           "en": "",
@@ -122,7 +122,7 @@
         },
         "date": "2026",
         "authors": "",
-        "url": "https://example.org/shape-notebook",
+        "url": "https://example.org/note-garden",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -130,24 +130,24 @@
       },
       {
         "title": {
-          "en": "Open Study Atlas",
-          "zh": "开放研究地图"
+          "en": "Chart Playground",
+          "zh": "图表实验室"
         },
         "subtitle": {
-          "en": "Research tools",
-          "zh": "研究工具"
+          "en": "Data visualization",
+          "zh": "数据可视化"
         },
         "description": {
-          "en": "An illustrative project for organizing research questions, notes, and links.",
-          "zh": "整理研究问题、笔记和链接的示例项目。"
+          "en": "Pairs scatterplots, heatmaps, and linked brushing to inspect small tabular datasets and compare visual encodings.",
+          "zh": "结合散点图、热力图和联动选择，探索小型表格数据，比较不同视觉编码的表达方式。"
         },
         "status": {
           "en": "",
           "zh": ""
         },
-        "date": "2025",
+        "date": "2026",
         "authors": "",
-        "url": "https://example.org/study-atlas",
+        "url": "https://example.org/chart-playground",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -155,16 +155,16 @@
       },
       {
         "title": {
-          "en": "Accessible Data Stories",
-          "zh": "可访问的数据叙事"
+          "en": "Study Map",
+          "zh": "学习地图"
         },
         "subtitle": {
-          "en": "Human-centered design",
-          "zh": "以人为中心的设计"
+          "en": "Learning tools",
+          "zh": "学习工具"
         },
         "description": {
-          "en": "A demonstration of presenting data with clear, accessible explanations.",
-          "zh": "通过清晰且易于访问的说明呈现数据的演示项目。"
+          "en": "Turns study notes into concept maps and prerequisite paths, with checkpoints for reviewing learning progress.",
+          "zh": "把学习笔记组织成概念地图和先修路径，通过阶段检查点回顾学习进展。"
         },
         "status": {
           "en": "",
@@ -172,7 +172,7 @@
         },
         "date": "2025",
         "authors": "",
-        "url": "https://example.org/data-stories",
+        "url": "https://example.org/study-map",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -186,20 +186,20 @@
           "zh": "科研实习生"
         },
         "subtitle": {
-          "en": "Example Research Lab",
-          "zh": "示例研究实验室"
+          "en": "Visual Interaction Group (demo)",
+          "zh": "可视交互研究组（演示）"
         },
         "description": {
-          "en": "Fictional experience used to demonstrate an internship timeline.",
-          "zh": "用于展示实习时间轴的虚构经历。"
+          "en": "Designed literature-note interfaces and interactive topic maps; prepared usability-study tasks and organized observation notes for prototype iteration.",
+          "zh": "设计文献笔记界面与交互式主题地图，编写可用性研究任务，并整理观察记录用于原型迭代。"
         },
         "status": {
           "en": "",
           "zh": ""
         },
-        "date": "2026.06 – Present",
+        "date": "2026.06 – 2026.09",
         "authors": "",
-        "url": "",
+        "url": "https://example.org/visual-interaction-demo",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -209,24 +209,24 @@
     "education": [
       {
         "title": {
-          "en": "Graduate Studies",
-          "zh": "研究生阶段"
+          "en": "Master's Studies in Visualization and Human–Computer Interaction",
+          "zh": "硕士 · 可视化与人机交互"
         },
         "subtitle": {
-          "en": "Example University",
-          "zh": "示例大学"
+          "en": "Massachusetts Institute of Technology (MIT)",
+          "zh": "麻省理工学院（MIT）"
         },
         "description": {
-          "en": "Fictional education entry.",
-          "zh": "虚构教育经历。"
+          "en": "Studies interactive visualization, research-note organization, and the design of accessible research tools.",
+          "zh": "关注交互式可视化、研究笔记组织，以及易用研究工具的设计。"
         },
         "status": {
-          "en": "",
-          "zh": ""
+          "en": "Expected graduation",
+          "zh": "预计毕业"
         },
-        "date": "2025 – 2027 (Expected)",
+        "date": "2025.09 – 2028.06",
         "authors": "",
-        "url": "",
+        "url": "https://example.org/mit-school-example",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -234,24 +234,24 @@
       },
       {
         "title": {
-          "en": "Undergraduate Studies",
-          "zh": "本科阶段"
+          "en": "Bachelor's Studies in Computer Science and Technology",
+          "zh": "本科 · 计算机科学与技术"
         },
         "subtitle": {
-          "en": "Example College",
-          "zh": "示例学院"
+          "en": "Massachusetts Institute of Technology (MIT)",
+          "zh": "麻省理工学院（MIT）"
         },
         "description": {
-          "en": "Fictional education entry.",
-          "zh": "虚构教育经历。"
+          "en": "Studied programming, data structures, and software engineering, with course projects in visualization and learning tools.",
+          "zh": "学习程序设计、数据结构与软件工程，并围绕可视化和学习工具完成课程项目。"
         },
         "status": {
           "en": "",
           "zh": ""
         },
-        "date": "2021 – 2025",
+        "date": "2021.09 – 2025.06",
         "authors": "",
-        "url": "",
+        "url": "https://example.org/mit-school-example",
         "image": "",
         "links": [],
         "confirmed": true,
@@ -261,22 +261,22 @@
     "honors": [
       {
         "title": {
-          "en": "Illustrative Research Award",
-          "zh": "示例研究奖"
+          "en": "Student Research Project Showcase Award (demo)",
+          "zh": "学生研究项目展示奖（演示）"
         },
         "subtitle": {
-          "en": "Fictional recognition",
-          "zh": "虚构荣誉"
+          "en": "Graduate research showcase",
+          "zh": "研究生创新项目展示"
         },
         "description": {
-          "en": "Demonstration only.",
-          "zh": "仅供演示。"
+          "en": "Presented a literature-note prototype connecting paper summaries, research questions, and topic maps.",
+          "zh": "设计并展示文献笔记原型，关联论文摘要、研究问题与主题地图。"
         },
         "status": {
           "en": "",
           "zh": ""
         },
-        "date": "2025",
+        "date": "2026",
         "authors": "",
         "url": "",
         "image": "",
@@ -288,11 +288,11 @@
   },
   "hidden_sections": [],
   "contact": {
-    "en": "This is a fictional demonstration. Replace this text with the kinds of research conversations and collaborations you welcome.",
-    "zh": "此处为虚构演示。你可以在这里介绍希望交流的研究问题和合作方向。"
+    "en": "I welcome conversations about visualization, human–computer interaction, and useful research tools. Feel free to reach out if you would like to exchange ideas or explore a collaboration.",
+    "zh": "欢迎交流数据可视化、人机交互和研究工具，也期待与有共同兴趣的伙伴讨论合作。欢迎来信分享想法，一起探索有趣的问题。"
   },
   "hobbies": {
-    "en": "Hiking · Photography · Reading",
-    "zh": "徒步 · 摄影 · 阅读"
+    "en": "Reading · Cycling · Sketching",
+    "zh": "阅读 · 骑行 · 速写"
   }
 }

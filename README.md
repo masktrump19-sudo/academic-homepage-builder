@@ -18,6 +18,24 @@ The online gallery shows static, fictional examples. Import your résumé in the
 | --- | --- | --- |
 | ![Academic desktop layout](docs/screenshots/academic-desktop.jpg) | ![Modern desktop layout](docs/screenshots/modern-desktop.jpg) | ![Visual desktop layout](docs/screenshots/visual-desktop.jpg) |
 
+## Chinese-language examples
+
+The screenshots feature fictional **小明 (Xiaoming)**, with MIT as an example school;
+the education, projects and achievements are fictional and imply no actual affiliation.
+
+### Academic two-column · 学术双栏
+
+![Fictional Xiaoming's Chinese academic homepage](docs/screenshots/xiaoming-academic-zh.jpg)
+
+| Modern minimal · 现代简洁 | Visual portfolio · 视觉作品 |
+| --- | --- |
+| ![Fictional Xiaoming's Chinese modern layout](docs/screenshots/xiaoming-modern-zh.jpg) | ![Fictional Xiaoming's Chinese visual layout](docs/screenshots/xiaoming-visual-zh.jpg) |
+
+Explore the Chinese template demos: [Academic](https://academic-homepage-builder.pages.dev/academic/zh/),
+[Modern](https://academic-homepage-builder.pages.dev/modern/zh/),
+[Visual](https://academic-homepage-builder.pages.dev/visual/zh/).
+The online gallery contains static examples; the editor and résumé import run locally.
+
 ## What you get
 
 - Local import of text-based PDF, DOCX, TXT, or pasted text.
