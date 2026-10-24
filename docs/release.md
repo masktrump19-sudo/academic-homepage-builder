@@ -7,6 +7,7 @@ release at a working folder containing a real person's original materials.
 python -m pytest
 python scripts/privacy_audit.py .
 python scripts/privacy_audit.py path/to/export.zip
+python scripts/privacy_audit.py path/to/package.whl
 ```
 
 To audit for specific personal information, create a JSON array of sensitive
