@@ -9,11 +9,11 @@ All test profiles and AI smoke-test text are fictional.
 
 | Check | Evidence and scope |
 | --- | --- |
-| Automated tests | 125 tests passed locally with Python 3.12 at this checkpoint. Parameterized cases cover the three templates, English/Chinese/bilingual output, missing sections, multiple entries, and unsafe content. |
+| Automated tests | 131 tests passed locally with Python 3.12 at this checkpoint. Parameterized cases cover the three templates, English/Chinese/bilingual output, missing sections, multiple entries, unsafe content and installed-package licenses. |
 | Import failures | Text PDF, DOCX and TXT cases; scanned, encrypted, corrupt, oversized and unsafe archive inputs; extracted candidates remain unconfirmed. |
 | Public-content boundary | Hidden sections, disabled languages, unselected or unused assets, and raw résumé text are excluded from exports. A second build removes the first fictional person's content and attachments. |
 | Local service | Loopback host and origin checks, per-session request token, explicit attachment approval, session clearing, and bounded uploads that remain in memory. |
-| Local network boundary | Automated local preview/export tests deny outbound networking. This is a backend test, not a complete browser traffic capture. |
+| Local network boundary | Automated local preview/export tests deny outbound networking. The browser walkthrough loaded only same-origin scripts, styles and previews; the local server enforces same-origin connections through Content Security Policy. This is not a packet capture of unrelated browser background activity. |
 | Optional AI | Consent, unavailable CLI, restricted arguments, timeout, provider errors and invalid JSON paths are tested. Provider diagnostics are not exposed, and successful output remains a tentative draft. Full browser checks of draft preservation remain below. |
 | Real Codex smoke test | The installed official client processed deliberately submitted fictional text and returned a valid, unconfirmed draft. This verifies that local installation and account only; other CLI versions and accounts can differ. |
 | Independent source build | An exported source package was installed in a separate virtual environment and built successfully using its own included modules and requirements. |
@@ -33,8 +33,9 @@ python -m pytest
 python scripts/privacy_audit.py .
 ```
 
-The GitHub workflow runs these commands on Windows, macOS and Ubuntu. Inspect
-the actual workflow results before claiming cross-platform release validation.
+The initial public commit passed the GitHub workflow on Windows, macOS and Ubuntu:
+[workflow run 40083261050](https://github.com/masktrump19-sudo/academic-homepage-builder/actions/runs/40083261050).
+Later release commits require their own successful workflow run.
 
 To reproduce the standalone build, export a reviewed fictional source project,
 extract it into a fresh directory, and create a separate virtual environment there:
@@ -53,7 +54,6 @@ responses and do not send their fixtures to an external provider.
 
 ## Still pending at this checkpoint
 
-- Browser network inspection of the ordinary local workflow.
 - Actual GitHub + Cloudflare Pages Git-integration deployment of the fictional
   demo, followed by a source change and confirmation of the automatic update.
 - Final release ZIP, screenshot, repository-history and hosted CI review.
@@ -64,8 +64,8 @@ indexing, or compatibility with every future provider version.
 
 ## 中文说明
 
-当前检查点已完成 125 项本地自动化测试、独立源码环境构建、使用虚构文字的官方
+当前检查点已完成 131 项本地自动化测试、独立源码环境构建、使用虚构文字的官方
 Codex 实际调用，以及浏览器导入、编辑、预览、源码导出与重新打开。三模板桌面、
-手机与深浅色已实际查看，PDF 隐藏附件也有专门回归测试。完整网络检查、
-Cloudflare 真实部署与推送自动更新，以及最终公开包检查，仍需以实际
+手机与深浅色已实际查看，PDF 隐藏附件也有专门回归测试。首个公开提交的三平台
+CI 已通过；Cloudflare 真实部署与推送自动更新，以及最终公开包检查，仍需以实际
 执行结果补充；不能把“已配置 CI”当作所有系统都已验证通过。

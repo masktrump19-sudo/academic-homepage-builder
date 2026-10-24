@@ -166,7 +166,7 @@ def inspect_file(path: Path, label: str, deny: list[str], allow_emails: bool) ->
         data = path.read_bytes()
     except OSError:
         return 1, [(label, 'file-could-not-be-read')]
-    if path.suffix.lower() != '.zip':
+    if path.suffix.lower() not in {'.zip', '.whl'}:
         return 1, inspect_bytes(label, data, deny, allow_emails)
     issues = inspect_bytes(label, b'', deny, allow_emails)
     count = 0
@@ -186,7 +186,7 @@ def inspect_file(path: Path, label: str, deny: list[str], allow_emails: bool) ->
                 if member.flag_bits & 1 or member.file_size > MAX_FILE_BYTES:
                     issues.append((member_label, 'encrypted-or-large-archive-member'))
                     continue
-                if member.filename.lower().endswith('.zip'):
+                if member.filename.lower().endswith(('.zip', '.whl')):
                     issues.append((member_label, 'nested-archive-needs-separate-audit'))
                     continue
                 # ZIP members are read in memory and are never extracted.
@@ -199,7 +199,7 @@ def inspect_file(path: Path, label: str, deny: list[str], allow_emails: bool) ->
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('target', nargs='?', default='.', help='Repository, directory, file, or ZIP to inspect')
+    parser.add_argument('target', nargs='?', default='.', help='Repository, directory, file, ZIP or wheel to inspect')
     parser.add_argument('--deny-file', type=Path, help='Private JSON list of forbidden strings; keep outside the repository')
     parser.add_argument('--allow-contact-emails', action='store_true', help='For reviewed personal-site exports only; still enforce deny list and credential checks')
     args = parser.parse_args(argv)

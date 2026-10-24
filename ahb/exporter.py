@@ -113,8 +113,14 @@ def source_files(site: Site, assets: dict[str, bytes]) -> dict[str, bytes]:
             files['ahb/site_assets/' + path.name] = path.read_bytes()
     root = package.parent
     for name in ['LICENSE', 'THIRD_PARTY_NOTICES.md']:
-        if (root / name).is_file():
-            files[name] = (root / name).read_bytes()
+        # A wheel lives inside site-packages, not beside the repository notices.
+        # Standalone source exports keep these notices at their project root.
+        notice = package / 'licenses' / name
+        if not notice.is_file():
+            notice = root / name
+        if not notice.is_file():
+            raise ValueError('Required license notice is missing. Reinstall Academic Homepage Builder.')
+        files[name] = notice.read_bytes()
     files['requirements.txt'] = b'pydantic>=2.10,<3\nPillow>=11\npypdf>=6\n'
     lock = root / 'requirements.txt'
     if lock.exists():
