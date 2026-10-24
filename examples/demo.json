@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "default_language": "en",
+  "template": "academic",
+  "accent": "#426b87",
+  "font": "serif",
+  "theme": "auto",
+  "site_url": "",
+  "example": true,
+  "profile": {
+    "name": {
+      "en": "Alex Morgan",
+      "zh": "林知远"
+    },
+    "headline": {
+      "en": "Research student · Fictional demo",
+      "zh": "研究生 · 虚构演示"
+    },
+    "affiliation": {
+      "en": "Example University",
+      "zh": "示例大学"
+    },
+    "bio": {
+      "en": "This fictional profile demonstrates an academic homepage. I explore how spatial computing and human-centered AI can make digital tools more useful and understandable. All people, institutions, projects, and achievements on this page are illustrative.",
+      "zh": "这是一份用于展示学术主页的虚构资料。我探索空间计算与以人为中心的人工智能，关注数字工具的实用性与可理解性。本页人物、机构、项目和成果均为演示内容。"
+    },
+    "interests": {
+      "en": "Spatial computing · Human-centered AI · Open research",
+      "zh": "空间计算 · 以人为中心的人工智能 · 开放研究"
+    },
+    "email": "alex@example.org",
+    "portrait": "",
+    "cv": "",
+    "links": [
+      {
+        "label": "Project notebook",
+        "url": "https://example.org/research"
+      }
+    ]
+  },
+  "sections": {
+    "news": [
+      {
+        "title": {
+          "en": "A new research notebook",
+          "zh": "新的研究笔记"
+        },
+        "subtitle": {
+          "en": "",
+          "zh": ""
+        },
+        "description": {
+          "en": "An illustrative update about documenting a project in public.",
+          "zh": "一条关于公开记录项目过程的示例动态。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2026.09",
+        "authors": "",
+        "url": "https://example.org/updates",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      }
+    ],
+    "publications": [
+      {
+        "title": {
+          "en": "Making Spatial Interfaces Easier to Understand",
+          "zh": "让空间界面更易理解"
+        },
+        "subtitle": {
+          "en": "Fictional manuscript",
+          "zh": "虚构稿件"
+        },
+        "description": {
+          "en": "An illustrative paper entry. Replace the title, author list, venue, status, and links with your own verified information.",
+          "zh": "示例论文条目。请用经过核实的信息替换标题、作者、发表场所、状态和链接。"
+        },
+        "status": {
+          "en": "Demonstration only — not a real publication",
+          "zh": "仅供演示 — 非真实论文"
+        },
+        "date": "2026",
+        "authors": "Alex Morgan, Taylor Chen",
+        "url": "",
+        "image": "",
+        "links": [
+          {
+            "label": "Project",
+            "url": "https://example.org/paper"
+          }
+        ],
+        "confirmed": true,
+        "enabled": true
+      }
+    ],
+    "projects": [
+      {
+        "title": {
+          "en": "Shape Notebook",
+          "zh": "形态笔记"
+        },
+        "subtitle": {
+          "en": "Interactive geometry",
+          "zh": "交互几何"
+        },
+        "description": {
+          "en": "A fictional workspace for exploring shapes through visual experiments.",
+          "zh": "用于通过可视化实验探索形态的虚构工作区。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2026",
+        "authors": "",
+        "url": "https://example.org/shape-notebook",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      },
+      {
+        "title": {
+          "en": "Open Study Atlas",
+          "zh": "开放研究地图"
+        },
+        "subtitle": {
+          "en": "Research tools",
+          "zh": "研究工具"
+        },
+        "description": {
+          "en": "An illustrative project for organizing research questions, notes, and links.",
+          "zh": "整理研究问题、笔记和链接的示例项目。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2025",
+        "authors": "",
+        "url": "https://example.org/study-atlas",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      },
+      {
+        "title": {
+          "en": "Accessible Data Stories",
+          "zh": "可访问的数据叙事"
+        },
+        "subtitle": {
+          "en": "Human-centered design",
+          "zh": "以人为中心的设计"
+        },
+        "description": {
+          "en": "A demonstration of presenting data with clear, accessible explanations.",
+          "zh": "通过清晰且易于访问的说明呈现数据的演示项目。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2025",
+        "authors": "",
+        "url": "https://example.org/data-stories",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      }
+    ],
+    "internships": [
+      {
+        "title": {
+          "en": "Research Intern",
+          "zh": "科研实习生"
+        },
+        "subtitle": {
+          "en": "Example Research Lab",
+          "zh": "示例研究实验室"
+        },
+        "description": {
+          "en": "Fictional experience used to demonstrate an internship timeline.",
+          "zh": "用于展示实习时间轴的虚构经历。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2026.06 – Present",
+        "authors": "",
+        "url": "",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      }
+    ],
+    "education": [
+      {
+        "title": {
+          "en": "Graduate Studies",
+          "zh": "研究生阶段"
+        },
+        "subtitle": {
+          "en": "Example University",
+          "zh": "示例大学"
+        },
+        "description": {
+          "en": "Fictional education entry.",
+          "zh": "虚构教育经历。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2025 – 2027 (Expected)",
+        "authors": "",
+        "url": "",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      },
+      {
+        "title": {
+          "en": "Undergraduate Studies",
+          "zh": "本科阶段"
+        },
+        "subtitle": {
+          "en": "Example College",
+          "zh": "示例学院"
+        },
+        "description": {
+          "en": "Fictional education entry.",
+          "zh": "虚构教育经历。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2021 – 2025",
+        "authors": "",
+        "url": "",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      }
+    ],
+    "honors": [
+      {
+        "title": {
+          "en": "Illustrative Research Award",
+          "zh": "示例研究奖"
+        },
+        "subtitle": {
+          "en": "Fictional recognition",
+          "zh": "虚构荣誉"
+        },
+        "description": {
+          "en": "Demonstration only.",
+          "zh": "仅供演示。"
+        },
+        "status": {
+          "en": "",
+          "zh": ""
+        },
+        "date": "2025",
+        "authors": "",
+        "url": "",
+        "image": "",
+        "links": [],
+        "confirmed": true,
+        "enabled": true
+      }
+    ]
+  },
+  "hidden_sections": [],
+  "contact": {
+    "en": "This is a fictional demonstration. Replace this text with the kinds of research conversations and collaborations you welcome.",
+    "zh": "此处为虚构演示。你可以在这里介绍希望交流的研究问题和合作方向。"
+  },
+  "hobbies": {
+    "en": "Hiking · Photography · Reading",
+    "zh": "徒步 · 摄影 · 阅读"
+  }
+}

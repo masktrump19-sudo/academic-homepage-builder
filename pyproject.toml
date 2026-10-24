@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic-homepage-builder"
+version = "0.1.0"
+description = "A local-first academic homepage builder with three templates and optional Codex assistance."
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "Academic Homepage Builder contributors"}]
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.32,<1", "python-multipart>=0.0.18", "pydantic>=2.10,<3", "pypdf>=6", "python-docx>=1.2,<2", "Pillow>=11"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "httpx>=0.28"]
+
+[project.scripts]
+ahb = "ahb.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ahb*"]
+
+[tool.setuptools.package-data]
+ahb = ["web/*", "site_assets/*", "demo.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
